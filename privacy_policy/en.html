@@ -50,6 +50,7 @@
         a {
             color: #1a73e8;
             text-decoration: none;
+            word-break: break-all;
         }
         a:hover {
             text-decoration: underline;
@@ -80,117 +81,209 @@
 </head>
 <body>
     <h1>acoustic Privacy Policy</h1>
-    
-    <p class="intro">The developer (the "Developer") of acoustic (the "App") respects user privacy and is committed to protecting personal information. This Privacy Policy explains how personal information is handled in the App.</p>
+
+    <p class="intro">The developer (the "Developer") of acoustic (the "App") respects your privacy and is committed to protecting personal information. This Privacy Policy explains how personal information is handled in the App.</p>
+
+    <p class="intro"><strong>Effective date: November 6, 2026</strong></p>
 
     <h2>1. Basic Policy</h2>
-    <p>The Developer complies with the Act on the Protection of Personal Information and related laws and regulations, and handles users' personal information appropriately.</p>
+    <p>The Developer works to follow the privacy laws that apply to the App and to handle your personal information carefully.</p>
 
-    <h2>2. Information We Collect</h2>
+    <h2>2. Who Is Responsible</h2>
+    <p>The App is provided by Hibiki Arakawa, an individual developer based in Japan. The Developer is also the App's Privacy Officer, Data Protection Officer, and person in charge of the protection of personal information.</p>
+    <ul>
+        <li>Contact: <a href="mailto:acousticapp.contact@gmail.com">acousticapp.contact@gmail.com</a>. This address is checked on weekdays during business hours in Japan, which is one hour ahead of Singapore.</li>
+        <li>Mailing address: provided without delay on request. Please send your request to the email address above.</li>
+    </ul>
 
-    <h3>2.1 Information Collected Automatically</h3>
-    <p>The App may automatically collect the following information for the purpose of improving service quality:</p>
+    <h2>3. Videos and Audio You Create</h2>
+    <p>Videos you record or import and audio you record in the App:</p>
+    <ul>
+        <li><strong>Are processed and stored on your device</strong></li>
+        <li>Are not sent by the App to the Developer or to third-party services</li>
+        <li>Cannot be viewed or received by the Developer</li>
+    </ul>
+    <p>The camera and microphone are used only to record video and audio, and adding to your photo library is used only to save edited videos. When you import a video, the App receives only the video you select. You can change these permissions at any time in your device's Settings.</p>
+    <p>Deleting the App deletes the videos stored in the App on your device. Videos saved to your photo library stay there.</p>
 
+    <h2>4. Information Sent to Third-Party Services</h2>
+    <p>The App uses the third-party services below, and the information listed is sent to them automatically through the App. Information that directly identifies you, such as your name, email address, or phone number, is not sent. The Developer does not use this information to identify individuals.</p>
+
+    <h3>4.1 Google Analytics for Firebase</h3>
     <div class="service-block">
-        <strong>Information collected by Google Firebase Analytics:</strong>
         <ul>
-            <li>App usage (number of launches, usage time, features used, etc.)</li>
-            <li>Device information (model, OS version, language settings, etc.)</li>
-            <li>Approximate location (country/region level)*</li>
-            <li>Crash reports</li>
-            <li>General in-app events</li>
+            <li>Provider: Google LLC (United States)</li>
+            <li>Purpose: To analyze how the App is used and to improve its features and usability</li>
+            <li>Information sent:
+                <ul>
+                    <li>Identifiers used to tell devices and apps apart</li>
+                    <li>App usage</li>
+                    <li>Purchase activity (such as the product, price, and currency). This does not include your name or payment details.</li>
+                    <li>Device information (model, OS version, language settings, etc.) and the App version</li>
+                    <li>Approximate region (country, region, or city level) *1</li>
+                    <li>Advertising identifier (IDFA) *2</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
+    <h3>4.2 Firebase Crashlytics</h3>
     <div class="service-block">
-        <strong>Information collected by Google AdMob (Advertising):</strong>
-        <p>For users on the free plan, the following information may be collected for ad delivery:</p>
         <ul>
-            <li>Advertising identifier (IDFA/AAID)</li>
-            <li>IP address</li>
-            <li>Device information</li>
-            <li>App usage information</li>
+            <li>Provider: Google LLC (United States)</li>
+            <li>Purpose: To find and fix problems</li>
+            <li>Information sent:
+                <ul>
+                    <li>Records of App crashes (time of the crash, App version, etc.)</li>
+                    <li>Device information (model, OS version, etc.)</li>
+                    <li>Identifiers used to tell devices and apps apart</li>
+                </ul>
+            </li>
         </ul>
-        <p>For more details, please refer to Google's advertising policies:<br>
+    </div>
+
+    <h3>4.3 Firebase Remote Config</h3>
+    <div class="service-block">
+        <ul>
+            <li>Provider: Google LLC (United States)</li>
+            <li>Purpose: To deliver App settings, such as update notices</li>
+            <li>Information sent:
+                <ul>
+                    <li>Identifiers used to tell devices and apps apart</li>
+                    <li>Country and language settings, time zone, OS version, and the App ID</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h3>4.4 Google AdMob (Advertising)</h3>
+    <div class="service-block">
+        <ul>
+            <li>Provider: Google LLC (United States)</li>
+            <li>Purpose: To show and measure ads on the free plan. If you allow tracking, Google may use your advertising identifier and your activity in other companies' apps and websites to show personalized ads.</li>
+            <li>Information sent:
+                <ul>
+                    <li>Advertising identifier (IDFA) *2</li>
+                    <li>Identifiers used to tell devices and apps apart, which may be sent even if you do not allow tracking</li>
+                    <li>IP address and the approximate location estimated from it</li>
+                    <li>Device information, interactions with ads such as views and taps, and performance records (such as crash records and launch time)</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Google may share this information with other companies that buy or show ads, and may use it for its own purposes, such as improving its products. If you do not allow tracking, the advertising identifier is not used, but Google may still use the other information listed here. Google's services can use identifiers and usage records to recognize a device, build a profile of interests, and estimate your approximate location from your IP address.</p>
+        <p>For more details, please see Google's advertising policies:<br>
         <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
     </div>
 
-    <p class="note">*Regarding location information:<br>
-    Approximate location information at the country or region level may be collected, but this does not identify the user's precise location.</p>
+    <h3>4.5 Apple</h3>
+    <div class="service-block">
+        <ul>
+            <li>Checking for the latest version: To check for updates, the App asks Apple's servers (the App Store) using the App ID and a country.</li>
+            <li>In-app purchases: Apple handles purchases and payment. The Developer does not receive your name or payment information.</li>
+        </ul>
+    </div>
 
-    <h3>2.2 Information Collected by the Developer</h3>
-    <p>The Developer does not intentionally collect any personal information from users, except for the automatically collected information described above.</p>
+    <p class="note">*1 This is estimated from your IP address. The App does not use your device's location services (such as GPS).<br>
+    *2 This is sent only if you allow tracking. You can change this at any time in Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
 
-    <h2>3. Purpose of Information Use</h2>
-    <p>The collected information is used for the following purposes:</p>
+    <p>Each company handles this information under its own privacy policy:</p>
     <ul>
-        <li>Analysis of app usage</li>
-        <li>Ad delivery (free plan only)</li>
+        <li>Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        <li>Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+        <li>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></li>
     </ul>
 
-    <h2>4. Content Storage Location</h2>
-    <p>Content such as videos and audio created by users in the App:</p>
+    <p>Risks to keep in mind: Google can combine these identifiers and usage records with other information, which could reveal your interests. Anything you write in an inquiry is stored in Google's systems.</p>
+
+    <h3>Where this information is processed</h3>
+    <p>Information sent to Google and Apple, and inquiries you send by form or email, may be stored and processed in the United States and other countries where those companies have facilities. The Developer handles inquiries in Japan. This information is collected and used electronically. While there, your information is subject to those countries' laws and may be accessed by their courts, law enforcement, and national security authorities. Recipients abroad may not have to protect your information in the way your local law requires, such as New Zealand's Privacy Act 2020. You can ask for written information about how the Developer uses service providers outside Canada. The Privacy Officer (Section 2) can answer questions about this.</p>
+
+    <h2>5. Information You Give Us When You Contact Us</h2>
+    <p>If you contact us through the inquiry form in the App or by email, we receive your email address (optional on the form) and the content of your inquiry. The inquiry form uses Google Forms and email uses Gmail, so Google LLC (United States) stores what you send for us.</p>
+
+    <h2>6. How Information Is Used</h2>
+    <p>The Developer uses the information described in this Privacy Policy for the following purposes:</p>
     <ul>
-        <li><strong>Is stored only on the user's device</strong></li>
-        <li>Is never transmitted to the Developer's servers or cloud services</li>
-        <li>Cannot be accessed by the Developer</li>
+        <li>Update notices</li>
+        <li>Analyzing how the App is used and improving its features and usability</li>
+        <li>Finding and fixing problems</li>
+        <li>Showing ads on the free plan</li>
+        <li>Answering your inquiries, contacting you about them, and improving the App based on them</li>
+        <li>Complying with legal requirements</li>
     </ul>
 
-    <h2>5. Disclosure of Information to Third Parties</h2>
-    <p>The Developer will not disclose collected information to third parties except in the following cases:</p>
+    <h2>7. If You Choose Not to Provide Information</h2>
+    <ul>
+        <li>If you do not allow the camera or microphone, you cannot record video or audio.</li>
+        <li>If you do not allow tracking, the advertising identifier is not sent. You can still use the App.</li>
+        <li>If you do not give an email address when you contact us, we cannot reply to you.</li>
+    </ul>
+    <p>You can withdraw your consent at any time. Turn off camera, microphone, photo library, or tracking permissions in your device's Settings, or ask us to delete your inquiry. Features that need a permission stop working without it. Analytics, crash reports, Remote Config, and ad information other than the advertising identifier are sent when the App runs, and the App has no setting to turn them off. To stop them, delete the App. Information already sent stays with Google for the periods in Section 9.</p>
+
+    <h2>8. Sharing Personal Information</h2>
+    <p>The Developer does not provide personal information received through inquiries to third parties, other than Google as described in Section 5, except in the following cases:</p>
     <ol>
-        <li>When user consent has been obtained</li>
+        <li>When you have consented</li>
         <li>When required by law</li>
-        <li>When necessary to protect a person's life, body, or property, and it is difficult to obtain consent from the individual</li>
+        <li>When necessary to protect a person's life, body, or property, and it is difficult to obtain your consent</li>
+        <li>Other cases permitted by applicable privacy laws</li>
     </ol>
+    <p>Information sent to the third-party services in Section 4 is as described in that section.</p>
 
-    <h3>5.1 Use of Third-Party Services</h3>
-    <p>The App uses the following third-party services:</p>
+    <h2>9. How Long Information Is Kept</h2>
+    <ul>
+        <li>Google Analytics for Firebase: Event and user-level records are deleted after 14 months. Aggregated reports that do not show individual users may be kept longer.</li>
+        <li>Firebase Crashlytics: Crash records and identifiers are kept for 90 days.</li>
+        <li>Firebase Remote Config: The Firebase installation ID is kept until it is deleted, then removed from Google's systems within 180 days.</li>
+        <li>Google AdMob: Google decides how long it keeps this information. Google says it anonymizes ad logs by removing part of the IP address after 9 months and cookie information after 18 months.</li>
+        <li>Your inquiries: Kept as long as needed to answer you and improve the App. To have them deleted, please contact us (Section 2).</li>
+    </ul>
 
-    <div class="service-block">
-        <strong>Google Firebase Analytics</strong>
-        <ul>
-            <li>Provider: Google LLC</li>
-            <li>Purpose: Analysis of app usage</li>
-            <li>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-        </ul>
-    </div>
+    <h2>10. Your Rights</h2>
+    <p>For the personal information the Developer holds about you, or that others hold for it, you can ask the Developer to:</p>
+    <ul>
+        <li>Tell you what it is used for, and how it has been used or shared in the past year</li>
+        <li>Show it to you or give you a copy in a commonly used electronic format</li>
+        <li>Show you any records of providing it to third parties</li>
+        <li>Correct, add to, or delete it</li>
+        <li>Stop collecting, processing, or using it, erase it, or stop providing it to third parties</li>
+    </ul>
+    <p>The information in Section 4 is tied to device identifiers, not to your name or email address, so the Developer cannot find your records from your name or email address. If you ask about those records, we will tell you what we can find and how to use Google's privacy settings.</p>
+    <p>Please send your request to the email address in Section 2. To confirm that you are the person concerned, we may ask you to write from the email address you used for your inquiry. There is no fee. We normally reply by email. We reply within 20 working days.</p>
+    <p>Nevada residents: You can ask the Developer not to sell your covered information, as Nevada law defines "sale," by emailing <a href="mailto:acousticapp.contact@gmail.com">acousticapp.contact@gmail.com</a>. This is the Developer's designated request address. The Developer replies within 60 days.</p>
 
-    <div class="service-block">
-        <strong>Google AdMob (free plan only)</strong>
-        <ul>
-            <li>Provider: Google LLC</li>
-            <li>Purpose: Ad delivery</li>
-            <li>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-        </ul>
-    </div>
+    <h2>11. Do Not Track and Tracking Across Apps</h2>
+    <p>The App does not respond to browser "Do Not Track" signals. On iPhone and iPad, tracking is controlled by your device's tracking setting (see *2 in Section 4).</p>
+    <p>Third parties such as Google may collect information about your activities over time and across different apps and services when you use the App.</p>
 
-    <p>These services collect and use information in accordance with their own privacy policies.</p>
+    <h2>12. Children</h2>
+    <p>The App is for a general audience and is not directed to children under 13 (under 14 in Québec). The Developer does not knowingly collect personal information from children under that age. If you are under that age, a parent or guardian must agree before you allow tracking or contact us. A parent or guardian can contact us (Section 2) to have a child's inquiry deleted.</p>
 
-    <h2>6. Cookies and Similar Technologies</h2>
-    <p>The App does not use cookies, but the third-party services mentioned above may use similar technologies (such as advertising identifiers).</p>
+    <h2>13. How Information Is Protected</h2>
+    <p>To prevent leaks, loss, and misuse of personal data, the Developer takes the following measures:</p>
+    <ul>
+        <li>Within the Developer's own operations, only the Developer handles personal data. Google stores the data described in Sections 4 and 5.</li>
+        <li>Devices used to handle personal data are managed so that others cannot view or use them, and measures are taken to prevent theft and loss.</li>
+        <li>Access to the accounts used to handle personal data is limited to the Developer, who uses measures such as two-step verification to protect them. No security measure is perfect.</li>
+    </ul>
 
-    <h2>7 Opting Out of Advertising</h2>
-    <p>Users can limit ad tracking through their device settings:</p>
-    <p><strong>For iPhone:</strong><br>
-    Settings &gt; Apps &gt; acoustic &gt; Turn off "Allow Tracking"</p>
+    <h2>14. Changes to This Privacy Policy</h2>
+    <p>The Developer may change this Privacy Policy when laws or the App's features change. If a change is significant, such as a new purpose or a new recipient, we will tell you in the App before it takes effect and ask for your consent where the law requires it. Other changes are announced on this page with a new effective date.</p>
 
-    <h2>8 Data Deletion</h2>
-    <p>Uninstalling the App will delete all content stored on the device.</p>
+    <h2>15. Contact</h2>
+    <p>For questions, comments, or complaints about this Privacy Policy or how personal information is handled, please contact:</p>
+    <ul>
+        <li>Email: <a href="mailto:acousticapp.contact@gmail.com">acousticapp.contact@gmail.com</a></li>
+        <li>The inquiry form in the App</li>
+    </ul>
+    <p>How complaints are handled: The Privacy Officer confirms receipt, looks into your complaint, and replies by email within 30 days. If you are not satisfied, you can complain to your regulator: the Office of the Privacy Commissioner of Canada; in Québec, the Commission d'accès à l'information; in British Columbia or Alberta, the provincial Information and Privacy Commissioner; in New Zealand, the Office of the Privacy Commissioner; in Australia, the Office of the Australian Information Commissioner.</p>
 
-    <h2>9. Changes to This Privacy Policy</h2>
-    <p>The Developer may change this Privacy Policy without prior notice. The revised Privacy Policy shall take effect upon publication within the App or on the website.</p>
-
-    <h2>10. Contact</h2>
-    <p>For questions or comments regarding this Privacy Policy, please contact us through the inquiry form within the App.</p>
-
-    <h2>11. Applicable Laws</h2>
-    <p>This Privacy Policy is governed by the Act on the Protection of Personal Information and related laws and regulations of Japan.</p>
+    <h2>16. Governing Law</h2>
+    <p>This Privacy Policy is interpreted under the laws of Japan. This does not limit any rights you have under the privacy laws of the country where you live.</p>
 
     <div class="supplementary">
-        <p>Supplementary Provisions<br>
-        Enacted on December 14, 2024</p>
-        <p>End of Document</p>
+        <p>First published: December 14, 2024<br>
+        Last updated: November 6, 2026</p>
     </div>
 </body>
 </html>
