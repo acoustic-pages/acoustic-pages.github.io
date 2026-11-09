@@ -84,7 +84,7 @@
 
     <p class="intro">The developer (the "Developer") of acoustic (the "App") respects your privacy and is committed to protecting personal information. This Privacy Policy explains how personal information is handled in the App.</p>
 
-    <p class="intro"><strong>Effective date: November 6, 2026</strong></p>
+    <p class="intro"><strong>Effective date: November 10, 2026</strong></p>
 
     <h2>1. Basic Policy</h2>
     <p>The Developer works to follow the privacy laws that apply to the App and to handle your personal information carefully.</p>
@@ -107,19 +107,20 @@
     <p>Deleting the App deletes the videos stored in the App on your device. Videos saved to your photo library stay there.</p>
 
     <h2>4. Information Sent to Third-Party Services</h2>
-    <p>The App uses the third-party services below, and the information listed is sent to them automatically through the App. Information that directly identifies you, such as your name, email address, or phone number, is not sent. The Developer does not use this information to identify individuals.</p>
+    <p>The App uses the third-party services below, and the information listed is sent to them automatically through the App. When sending starts, and what you can turn off, depend on your App Store country and the App version (see 4.6) and, where the law requires an age check, on your age (Section 12). Information that directly identifies you, such as your name, email address, or phone number, is not sent. The Developer does not use this information to identify individuals.</p>
 
     <h3>4.1 Google Analytics for Firebase</h3>
     <div class="service-block">
         <ul>
             <li>Provider: Google LLC (United States)</li>
-            <li>Purpose: To analyze how the App is used and to improve its features and usability</li>
+            <li>Purpose: To analyze how the App is used and to improve its features and usability. Google Analytics is linked to AdMob (4.4), so Google may also use this information in AdMob to improve its ad features and to optimize ad delivery in the App.</li>
             <li>Information sent:
                 <ul>
                     <li>Identifiers used to tell devices and apps apart</li>
                     <li>App usage</li>
                     <li>Purchase activity (such as the product, price, and currency). This does not include your name or payment details.</li>
                     <li>Device information (model, OS version, language settings, etc.) and the App version</li>
+                    <li>IP address *3</li>
                     <li>Approximate region (country, region, or city level) *1</li>
                     <li>Advertising identifier (IDFA) *2</li>
                 </ul>
@@ -131,12 +132,14 @@
     <div class="service-block">
         <ul>
             <li>Provider: Google LLC (United States)</li>
-            <li>Purpose: To find and fix problems</li>
+            <li>Purpose: To find and fix problems, including measuring how often the App crashes</li>
             <li>Information sent:
                 <ul>
                     <li>Records of App crashes (time of the crash, App version, etc.)</li>
+                    <li>Records of when you start using the App (sessions), which are sent even if the App does not crash</li>
                     <li>Device information (model, OS version, etc.)</li>
                     <li>Identifiers used to tell devices and apps apart</li>
+                    <li>IP address *3</li>
                 </ul>
             </li>
         </ul>
@@ -150,7 +153,10 @@
             <li>Information sent:
                 <ul>
                     <li>Identifiers used to tell devices and apps apart</li>
-                    <li>Country and language settings, time zone, OS version, and the App ID</li>
+                    <li>Device model, OS version, country and language settings, time zone, the App ID and version, and the versions of the Firebase software in the App</li>
+                    <li>If Google Analytics (4.1) has recorded them on your device, user properties such as the time you first opened the App</li>
+                    <li>Records of the days on which the App used Firebase</li>
+                    <li>IP address *3</li>
                 </ul>
             </li>
         </ul>
@@ -160,7 +166,7 @@
     <div class="service-block">
         <ul>
             <li>Provider: Google LLC (United States)</li>
-            <li>Purpose: To show and measure ads on the free plan. If you allow tracking, Google may use your advertising identifier and your activity in other companies' apps and websites to show personalized ads.</li>
+            <li>Purpose: To show and measure ads on the free plan. If you allow tracking, Google may use your advertising identifier and your activity in other companies' apps and websites to show personalized ads, unless "Personalized ads" is off (4.6). Even when ads are not personalized, if you allow tracking, Google may use the advertising identifier to limit how often an ad is shown and for aggregated ad reporting.</li>
             <li>Information sent:
                 <ul>
                     <li>Advertising identifier (IDFA) *2</li>
@@ -180,11 +186,28 @@
         <ul>
             <li>Checking for the latest version: To check for updates, the App asks Apple's servers (the App Store) using the App ID and a country.</li>
             <li>In-app purchases: Apple handles purchases and payment. The Developer does not receive your name or payment information.</li>
+            <li>App Store country: To decide how the App works in your country (4.6), the App reads the country of your App Store account on your device and remembers it there.</li>
+            <li>Age range (version 1.9.4 and later): Only if your App Store country is the United States, each time the App starts, the App asks Apple whether the law requires an age check for you and, only where Apple says it does (such as in Texas), asks for your age range. See Section 12.</li>
         </ul>
     </div>
 
+    <h3>4.6 Choices About Sending, by App Store Country (Version 1.9.4 and Later)</h3>
+    <p>How the App sends the information in 4.1 to 4.4 depends on the country of your App Store account. Versions earlier than 1.9.4 do not have the settings or the screen described here; in those versions, the information is sent when the App runs.</p>
+    <ul>
+        <li><strong>Singapore and Taiwan:</strong> If you are new to the App, the App shows a screen in English titled "Data acoustic sends, and your choices" after the introduction screens, when you tap "Start Recording." If you already used the App before version 1.9.4, it shows the screen when you first open version 1.9.4. The App sends nothing until you tap Continue on that screen. Crash records from before you tap Continue are deleted without being sent. For this, while the App waits for you to tap Continue, it keeps a note on your device, and removes the note after it has deleted those records. The note is not sent from your device.
+            <ul>
+                <li>Needed to provide the App: After you tap Continue, the App sends crash reports (4.2), checks for updates (4.3 and 4.5), and gets ads for the free plan (4.4). These ads are not personalized unless you turn on "Personalized ads."</li>
+                <li>Optional: "Send usage data (analytics)" (4.1) and "Personalized ads" are off unless you turn them on, on that screen or later in About app &gt; Data Settings. With both off, you can still use every feature. You can turn them off again at any time in Data Settings.</li>
+                <li>If the App does not yet know that your App Store country is Singapore or Taiwan (for example, if it cannot tell your country within a few seconds, or after you change your App Store country), it works as described for other countries until it finds out. It then stops sending and shows the screen.</li>
+            </ul>
+        </li>
+        <li><strong>Other countries (including Japan, the United States, Australia, and New Zealand):</strong> The App has no setting to turn off analytics or personalized ads. The information in 4.1 to 4.4 is sent when the App runs.</li>
+    </ul>
+    <p>When "Send usage data (analytics)" is off, the App does not send usage data to Google Analytics from then on. Crash reports (4.2) are still sent. When "Personalized ads" is off, ads are still shown in the free plan, but the App asks Google AdMob for non-personalized ads and tells Google Analytics that you have not agreed to personalized ads or to sending your data to Google for advertising. If you allow tracking (*2), the advertising identifier may still be sent to Google AdMob and used to limit how often an ad is shown and for aggregated ad reporting, but not to choose ads based on your interests. A change applies to information sent after it. Information already sent stays with Google for the periods in Section 9.</p>
+
     <p class="note">*1 This is estimated from your IP address. The App does not use your device's location services (such as GPS).<br>
-    *2 This is sent only if you allow tracking. You can change this at any time in Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+    *2 This is sent only if you allow tracking. You can change this at any time in Settings &gt; Privacy &amp; Security &gt; Tracking.<br>
+    *3 Google receives your IP address when the App connects to its servers.</p>
 
     <p>Each company handles this information under its own privacy policy:</p>
     <ul>
@@ -196,7 +219,7 @@
     <p>Risks to keep in mind: Google can combine these identifiers and usage records with other information, which could reveal your interests. Anything you write in an inquiry is stored in Google's systems.</p>
 
     <h3>Where this information is processed</h3>
-    <p>Information sent to Google and Apple, and inquiries you send by form or email, may be stored and processed in the United States and other countries where those companies have facilities. The Developer handles inquiries in Japan. This information is collected and used electronically. While there, your information is subject to those countries' laws and may be accessed by their courts, law enforcement, and national security authorities. Recipients abroad may not have to protect your information in the way your local law requires, such as New Zealand's Privacy Act 2020. You can ask for written information about how the Developer uses service providers outside Canada. The Privacy Officer (Section 2) can answer questions about this.</p>
+    <p>Information sent to Google and Apple, and inquiries you send by form or email, may be stored and processed in the United States and other countries where those companies have facilities. The Developer handles inquiries in Japan. This information is collected and used electronically. While there, your information is subject to those countries' laws and may be accessed by their courts, law enforcement, and national security authorities. Recipients abroad may not have to protect your information in the way your local law requires, such as New Zealand's Privacy Act 2020. The Privacy Officer (Section 2) can answer questions about this.</p>
 
     <h2>5. Information You Give Us When You Contact Us</h2>
     <p>If you contact us through the inquiry form in the App or by email, we receive your email address (optional on the form) and the content of your inquiry. The inquiry form uses Google Forms and email uses Gmail, so Google LLC (United States) stores what you send for us.</p>
@@ -207,8 +230,9 @@
         <li>Update notices</li>
         <li>Analyzing how the App is used and improving its features and usability</li>
         <li>Finding and fixing problems</li>
-        <li>Showing ads on the free plan</li>
+        <li>Showing ads on the free plan, and measuring and optimizing their delivery (4.1, 4.4)</li>
         <li>Answering your inquiries, contacting you about them, and improving the App based on them</li>
+        <li>Applying age-based restrictions where the law requires them (Section 12)</li>
         <li>Complying with legal requirements</li>
     </ul>
 
@@ -216,9 +240,10 @@
     <ul>
         <li>If you do not allow the camera or microphone, you cannot record video or audio.</li>
         <li>If you do not allow tracking, the advertising identifier is not sent. You can still use the App.</li>
+        <li>If you turn off "Send usage data (analytics)" or "Personalized ads" where the App offers them (4.6), you can still use every feature of the App.</li>
         <li>If you do not give an email address when you contact us, we cannot reply to you.</li>
     </ul>
-    <p>You can withdraw your consent at any time. Turn off camera, microphone, photo library, or tracking permissions in your device's Settings, or ask us to delete your inquiry. Features that need a permission stop working without it. Analytics, crash reports, Remote Config, and ad information other than the advertising identifier are sent when the App runs, and the App has no setting to turn them off. To stop them, delete the App. Information already sent stays with Google for the periods in Section 9.</p>
+    <p>You can withdraw your consent at any time. Turn off camera, microphone, photo library, or tracking permissions in your device's Settings, or ask us to delete your inquiry. Features that need a permission stop working without it. In version 1.9.4 and later, if your App Store country is Singapore or Taiwan, you can also turn off "Send usage data (analytics)" and "Personalized ads" in About app &gt; Data Settings (4.6). Crash reports (4.2), Remote Config, and ad information other than the advertising identifier cannot be turned off in the App. In other countries, and in versions earlier than 1.9.4, analytics cannot be turned off in the App either. To stop them, delete the App. Information already sent stays with Google for the periods in Section 9.</p>
 
     <h2>8. Sharing Personal Information</h2>
     <p>The Developer does not provide personal information received through inquiries to third parties, other than Google as described in Section 5, except in the following cases:</p>
@@ -236,11 +261,12 @@
         <li>Firebase Crashlytics: Crash records and identifiers are kept for 90 days.</li>
         <li>Firebase Remote Config: The Firebase installation ID is kept until it is deleted, then removed from Google's systems within 180 days.</li>
         <li>Google AdMob: Google decides how long it keeps this information. Google says it anonymizes ad logs by removing part of the IP address after 9 months and cookie information after 18 months.</li>
+        <li>Age range from Apple: Not sent from your device and not kept on it. The App keeps on your device only Apple's answer on whether an age check is required, a record that the App cannot be used if you are under 13, and a note that the App used Firebase while it could not tell that you are 13 or older (Section 12).</li>
         <li>Your inquiries: Kept as long as needed to answer you and improve the App. To have them deleted, please contact us (Section 2).</li>
     </ul>
 
     <h2>10. Your Rights</h2>
-    <p>For the personal information the Developer holds about you, or that others hold for it, you can ask the Developer to:</p>
+    <p>For the personal information the Developer holds about you (such as the information you give us when you contact us, Section 5), or that others hold for it, you can ask the Developer to:</p>
     <ul>
         <li>Tell you what it is used for, and how it has been used or shared in the past year</li>
         <li>Show it to you or give you a copy in a commonly used electronic format</li>
@@ -248,16 +274,20 @@
         <li>Correct, add to, or delete it</li>
         <li>Stop collecting, processing, or using it, erase it, or stop providing it to third parties</li>
     </ul>
-    <p>The information in Section 4 is tied to device identifiers, not to your name or email address, so the Developer cannot find your records from your name or email address. If you ask about those records, we will tell you what we can find and how to use Google's privacy settings.</p>
-    <p>Please send your request to the email address in Section 2. To confirm that you are the person concerned, we may ask you to write from the email address you used for your inquiry. There is no fee. We normally reply by email. We reply within 20 working days.</p>
+    <p>The information in Section 4 is tied to device identifiers, not to your name or email address. Because of this, the Developer usually cannot tell which of those records are yours, and in that case cannot show, copy, correct, or delete them. You can still make a request: we will tell you whether we could identify your records, how to stop or reduce sending (Section 4.6), and how to use Google's privacy settings. If we can identify your records and confirm that they are yours, we will handle your request as described in this section, as we do for information you give us when you contact us (Section 5).</p>
+    <p>Please send your request to the email address in Section 2. To confirm that you are the person concerned, we may ask you to write from the email address you used for your inquiry. There is no fee. We normally reply by email. We reply within 15 days of receiving your request. If we need more time, we will tell you the reason in writing within those 15 days and reply within another 15 days at most.</p>
     <p>Nevada residents: You can ask the Developer not to sell your covered information, as Nevada law defines "sale," by emailing <a href="mailto:acousticapp.contact@gmail.com">acousticapp.contact@gmail.com</a>. This is the Developer's designated request address. The Developer replies within 60 days.</p>
 
     <h2>11. Do Not Track and Tracking Across Apps</h2>
     <p>The App does not respond to browser "Do Not Track" signals. On iPhone and iPad, tracking is controlled by your device's tracking setting (see *2 in Section 4).</p>
     <p>Third parties such as Google may collect information about your activities over time and across different apps and services when you use the App.</p>
 
-    <h2>12. Children</h2>
-    <p>The App is for a general audience and is not directed to children under 13 (under 14 in Québec). The Developer does not knowingly collect personal information from children under that age. If you are under that age, a parent or guardian must agree before you allow tracking or contact us. A parent or guardian can contact us (Section 2) to have a child's inquiry deleted.</p>
+    <h2>12. Children and Age</h2>
+    <p>The App is for a general audience and is not directed to children under 13. The Developer does not knowingly collect personal information from children under that age. If you are under that age, please do not contact us or send us personal information. If we learn that an inquiry came from a child under that age, we will delete it. A parent or guardian can contact us (Section 2) to have a child's inquiry deleted.</p>
+    <p>Age range from Apple (version 1.9.4 and later): Only if your App Store country is the United States, each time the App starts, it asks Apple whether the law requires an age check for you. Only where Apple says it does, such as in Texas, the App asks Apple for your age range (under 13, 13 to 15, 16 to 17, or 18 and over). For other App Store countries, and while the App cannot tell your App Store country, the App does not ask. The App uses the age range only to apply the age-based restrictions below and to comply with the law. The App does not send your age range, or how it was confirmed, to the Developer, to Google (Firebase or AdMob), or to anyone else, and does not keep it on your device. The App keeps on your device only Apple's answer on whether the check is required, a record that the App cannot be used if you are under 13, and a note that the App used Firebase while it could not tell that you are 13 or older (see below). On iOS versions earlier than 26.2, the App cannot ask Apple whether the check is required, and does not ask for your age range.</p>
+    <p>Where the check is required, the App does not send the information in 4.1 to 4.4, show ads, or check for updates until it gets Apple's answer about your age range. If the answer shows that you are 13 or older, the App works as described in Section 4. If the App cannot tell from the answer that you are 13 or older (for example, if you do not share your age range or an error occurs), you can still use the App, but the App only checks for updates (4.3 and 4.5). It does not send information to Google Analytics (4.1), Firebase Crashlytics (4.2), or Google AdMob (4.4), and does not show ads. To check for updates, the App sends the information listed in 4.3 to Google and the App ID, a country, and your IP address to Apple. The App uses this only to find out whether your version of the App needs an update and to ask you to update it, so that the App keeps working as intended. It does not use this information for ads, to build a profile about you, or to contact you. It reads from Remote Config only the App versions that need an update, and it does not send your age range, or the fact that your age is not known, to Google or Apple. Within the Developer's own operations, only the Developer can access this information (Section 13). While the App uses Firebase to check for updates, Firebase Crashlytics may keep records of App crashes on your device. The App does not send them. It deletes them before it starts sending crash reports (for example, when it finds that you are 13 or older), or when it finds that you are under 13. For this, the App keeps a note on your device that it used Firebase while it could not tell that you are 13 or older. The note is not sent from your device or given to Google. However, until Apple answers that the check is required, the App works as described in Section 4 if Apple's earlier answer was that no check was required, if the App does not yet know that your App Store country is the United States, or if the App has no earlier answer and Apple does not answer within a few seconds or returns an error. When Apple answers that the check is required, the App stops sending the information in 4.1 to 4.3, stops showing ads, and asks for your age range.</p>
+    <p>Under 13: The App shows "This app is for people aged 13 and older." and cannot be used. It does not send the information in 4.1 to 4.4, show ads, or check for updates, and it deletes the analytics data and unsent crash records that Firebase stored on your device. This does not delete information already sent to Google, or some identifiers stored on your device, such as the Firebase installation ID. A parent or guardian can contact us (Section 2) about this.</p>
+    <p>Singapore and Taiwan: If you are under 18, please ask a parent or guardian before you turn on "Send usage data (analytics)" or "Personalized ads" (4.6).</p>
 
     <h2>13. How Information Is Protected</h2>
     <p>To prevent leaks, loss, and misuse of personal data, the Developer takes the following measures:</p>
@@ -276,14 +306,14 @@
         <li>Email: <a href="mailto:acousticapp.contact@gmail.com">acousticapp.contact@gmail.com</a></li>
         <li>The inquiry form in the App</li>
     </ul>
-    <p>How complaints are handled: The Privacy Officer confirms receipt, looks into your complaint, and replies by email within 30 days. If you are not satisfied, you can complain to your regulator: the Office of the Privacy Commissioner of Canada; in Québec, the Commission d'accès à l'information; in British Columbia or Alberta, the provincial Information and Privacy Commissioner; in New Zealand, the Office of the Privacy Commissioner; in Australia, the Office of the Australian Information Commissioner.</p>
+    <p>How complaints are handled: The Privacy Officer confirms receipt, looks into your complaint, and replies by email within 30 days. If you are not satisfied, you can complain to your regulator: in New Zealand, the Office of the Privacy Commissioner; in Australia, the Office of the Australian Information Commissioner.</p>
 
     <h2>16. Governing Law</h2>
     <p>This Privacy Policy is interpreted under the laws of Japan. This does not limit any rights you have under the privacy laws of the country where you live.</p>
 
     <div class="supplementary">
         <p>First published: December 14, 2024<br>
-        Last updated: November 6, 2026</p>
+        Last updated: November 10, 2026</p>
     </div>
 </body>
 </html>
